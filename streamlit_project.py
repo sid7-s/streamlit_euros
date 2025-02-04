@@ -7,7 +7,7 @@ import statistics
 
 # Set Title and Subtitle
 st.title("Euros 2024 Shot Map")
-st.subheader("Filter to any team/player to see all of their shots")
+st.subheader("Filter to any team/player to see all of their non-penalty shots")
 
 # Load Data, convert shot location from json as string to list object
 df = pd.read_csv("Euro2024_shots.csv")
@@ -66,7 +66,7 @@ ax1.text(
 ax1.text(
     x=0.5,
     y=.7,
-    s=f'All shots in the 2024 Euros',
+    s=f'All non-penalty shots in the 2024 Euros',
     fontsize=14,
     fontweight='bold',
     color=line_color,
